@@ -5,19 +5,20 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import MoodSelector from "./components/moodselector";
+import MoodSelector from "./components/MoodSelector";
 
 const moods = [
   { id: "happy", name: "Happy", color: "yellow" },
   { id: "sad", name: "Sad", color: "blue" },
   { id: "energetic", name: "Energetic", color: "red" },
-  { id: "calm", name: "Calm", color: "green" },
+  { id: "chill", name: "Chill", color: "green" },
   { id: "romantic", name: "Romantic", color: "pink" },
   { id: "sleepy", name: "Sleepy", color: "purple" },
   { id: "sunny", name: "Sunny", color: "orange" },
   { id: "rainy", name: "Rainy", color: "indigo" },
 ];
 
+//http://localhost:5000/api/playlist?mood=${mood}
 const App = () => {
   const [selectedMood, setSelectedMood] = useState(null);
 
